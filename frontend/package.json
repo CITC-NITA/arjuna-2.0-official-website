@@ -1,0 +1,15 @@
+{
+  "name": "arjuna-2.0-main-website",
+  "version": "1.0.0",
+  "description": "This is official website of Arjuna 2.0 Hackathon developed by Abhishek Sakhare",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Abhishek Sakhare",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  }
+}
