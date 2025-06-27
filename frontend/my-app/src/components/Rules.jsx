@@ -1,15 +1,74 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import '../styles/rules.css';
+import bg from "../assets/about-bg.jpg";
 
-const Rules = () => (
-  <section id="rules" className="section">
-    <h2>Team & Idea Submission</h2>
-    <ul>
-      <li>Teams must be from the same college/university</li>
-      <li>Each team must have 4 members (1 female member encouraged)</li>
-      <li>Idea submission via GForm link in WhatsApp group</li>
-      <li>Idea format will be shared with registered teams</li>
-    </ul>
-  </section>
-);
+const rulesData = [
+  {
+    title: 'Team Formation',
+    points: [
+      'All team members should be from the SAME college/university; NO inter-college/university teams are allowed. However, members from different branches/domains of the same college/university are encouraged to form a team.',
+      'Each team should mandatorily comprise of FOUR members including the team leader.',
+      'Presence of at least ONE female member is highly appreciated and encouraged (NOT mandatory).',
+    ],
+  },
+  {
+    title: 'Idea Nomination Process',
+    points: [
+      'After the team leader has registered the team name via the registration form before the deadline, a WhatsApp group will be created for team leaders.',
+      'Another form will be shared in the group where team leaders must submit their ideas against a Problem Statement.',
+      'Idea submission window is from 11/06/2025 to 25/06/2025. No submissions will be accepted after that.',
+      'Submission format will be attached within the registration form itself.',
+    ],
+  },
+  {
+    title: 'Grand Finalists Announcement',
+    points: [
+      'Notifications regarding selected teams will be sent via email to the team leader.',
+      'SIX teams per Problem Statement will be selected to compete in the Grand Finale.',
+    ],
+  },
+  {
+    title: 'Miscellaneous Information',
+    points: [
+      "No travel reimbursement will be provided; participants must arrange their own travel.",
+      "Accommodation will be provided to non-Agartala participants from 27th to 29th July, 2025.",
+      "Food will be provided on these dates for all participants.",
+    ],
+  },
+];
+
+const Rules = () => {
+  const ref = useRef();
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const obs = new IntersectionObserver(
+      ([entry]) => setVisible(entry.isIntersecting),
+      { threshold: 0.3 }
+    );
+    if (ref.current) obs.observe(ref.current);
+    return () => {
+      if (ref.current) obs.unobserve(ref.current);
+    };
+  }, []);
+
+  return (
+    <section id="rules" className={`rules-section ${visible ? 'visible' : ''}`} ref={ref} >
+      <h2>Rules & Guidelines</h2>
+      <div className="rules-container">
+        {rulesData.map((block, idx) => (
+          <div className="rule-block" key={idx}>
+            <h3>{block.title}</h3>
+            <ul>
+              {block.points.map((point, i) => (
+                <li key={i}>{point}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+};
 
 export default Rules;

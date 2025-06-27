@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import '../styles/deadlines.css';
 import trophy from "../assets/trophy.png";
+import bg from "../assets/about-bg.jpg";
 
 const Deadlines = () => {
   const sectionRef = useRef();
@@ -27,7 +28,7 @@ const Deadlines = () => {
     <section
       id="deadlines"
       className={`timeline-section ${isVisible ? 'visible' : ''}`}
-      ref={sectionRef}
+      ref={sectionRef} style={{ backgroundImage: `url(${bg})` }}
     >
       <h2>DEADLINES OF ARJUNA 2.0</h2>
       <div className="timeline">

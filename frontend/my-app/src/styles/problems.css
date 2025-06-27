@@ -1,0 +1,85 @@
+.problems-section {
+  padding: 6rem 2rem;
+  background: linear-gradient(to right, #0f0f0f, #1a1a1a);
+  color: white;
+  text-align: center;
+  transition: all 0.8s ease;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.problems-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.problems-section h2 {
+  font-size: 2.5rem;
+  color: #00f7ff;
+  margin-bottom: 3rem;
+}
+
+.problem-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.problem-card {
+  background: #1e1e1e;
+  border-left: 6px solid #00f7ff;
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 247, 255, 0.1);
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeSlideUp 0.6s forwards;
+}
+
+.problems-section.visible .problem-card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.problems-section.visible .problem-card:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.problems-section.visible .problem-card:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.problems-section.visible .problem-card:nth-child(4) {
+  animation-delay: 0.8s;
+}
+.problems-section.visible .problem-card:nth-child(5) {
+  animation-delay: 1s;
+}
+
+.problem-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 25px rgba(0, 247, 255, 0.3);
+}
+
+.problem-card .index {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00f7ff;
+  flex-shrink: 0;
+}
+
+.problem-card p {
+  font-size: 1.1rem;
+  color: #dddddd;
+  text-align: left;
+}
+
+@keyframes fadeSlideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
