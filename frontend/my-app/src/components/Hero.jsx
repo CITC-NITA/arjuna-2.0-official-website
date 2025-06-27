@@ -11,7 +11,8 @@ const Hero = () => (
       <h1>ARJUNA 2.0</h1>
       
       <a href="#rules" className="btn">Apply Now</a>
-      <a href={brochure} className="btn outline" target="_blank">Download Brochure</a>
+      <a href={brochure} className="btn outline" target="_blank" rel="noopener noreferrer">Download Brochure</a>
+
     </div>
   </header>
 );

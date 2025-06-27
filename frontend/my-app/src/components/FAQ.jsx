@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
 import "../styles/faq.css";
-import bg from "../assets/about-bg.jpg";
 
 const faqList = [
   {
@@ -38,9 +37,12 @@ const FAQ = () => {
       ([entry]) => setVisible(entry.isIntersecting),
       { threshold: 0.3 }
     );
-    if (sectionRef.current) obs.observe(sectionRef.current);
+
+    const currentRef = sectionRef.current;
+
+    if (currentRef) obs.observe(currentRef);
     return () => {
-      if (sectionRef.current) obs.unobserve(sectionRef.current);
+      if (currentRef) obs.unobserve(currentRef);
     };
   }, []);
 

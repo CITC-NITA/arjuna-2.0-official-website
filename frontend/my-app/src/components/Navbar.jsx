@@ -6,7 +6,7 @@ import "../styles/navbar.css";
 
 const Navbar = () => (
   <nav className="navbar">
-    <img src={logo} height={100} width={300}/>
+    <img src={logo} height={100} width={300} alt='logo'/>
     
 
     <ul>

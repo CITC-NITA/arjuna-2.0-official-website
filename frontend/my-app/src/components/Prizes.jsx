@@ -11,10 +11,12 @@ const Prizes = () => {
       ([entry]) => setVisible(entry.isIntersecting),
       { threshold: 0.3 }
     );
-    if (ref.current) obs.observe(ref.current);
+    const currentRef = ref.current;
+    if (currentRef) obs.observe(currentRef);
     return () => {
-      if (ref.current) obs.unobserve(ref.current);
+    if (currentRef) obs.unobserve(currentRef);
     };
+
   }, []);
 
   return (
