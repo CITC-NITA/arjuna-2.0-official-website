@@ -1,0 +1,88 @@
+.hero {
+  height: 140vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6); 
+  padding: 4rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(248, 247, 247, 0.5);
+  backdrop-filter: blur(8px);
+  max-width: 800px;
+  margin: 0 auto;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.overlay h1:first-of-type {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.overlay p {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  color: #f0f0f0;
+  margin: auto;
+}
+
+.overlay h1:last-of-type {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin: 1rem 0 2rem;
+  color: #00f7ff;
+  text-shadow: 0 0 10px #00f7ff;
+  letter-spacing: 2px;
+}
+
+.btn {
+  padding: 0.75rem 1.8rem;
+  font-size: 1rem;
+  border: none;
+  margin: 0.5rem;
+  cursor: pointer;
+  border-radius: 30px;
+  background-color: #00f7ff;
+  color: #000;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: #00c3cc;
+  transform: translateY(-2px);
+}
+
+.btn.outline {
+  background: transparent;
+  color: #00f7ff;
+  border: 2px solid #00f7ff;
+}
+
+.btn.outline:hover {
+  background-color: #00f7ff;
+  color: #000;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

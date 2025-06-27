@@ -1,0 +1,35 @@
+.section {
+  padding: 6rem 2rem;
+  background-color: #0d0d0d;
+  color: #ffffff;
+  text-align: center;
+  margin: auto;
+}
+
+.section h2 {
+  font-size: 2.8rem;
+  color: #00f7ff;
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3px;
+  width: 60%;
+  background-color: #00f7ff;
+  border-radius: 2px;
+}
+
+.section p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #e0e0e0;
+  max-width: 800px;
+  margin: 0 auto;
+}
