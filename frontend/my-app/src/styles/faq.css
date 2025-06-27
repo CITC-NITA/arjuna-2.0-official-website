@@ -55,6 +55,11 @@
   line-height: 1.6;
 }
 
+.faq-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px rgba(0, 247, 255, 0.3);
+}
+
 @keyframes fadeSlideUp {
   to {
     opacity: 1;
