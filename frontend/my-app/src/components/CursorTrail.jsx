@@ -1,5 +1,5 @@
 // CursorTrail.jsx
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import '../styles/cursortrail.css';
 
 const CursorTrail = () => {
