@@ -4,17 +4,9 @@
   text-align: center;
   padding: 2rem 1rem;
   font-size: 0.95rem;
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.8s ease;
-  border-top: 1px solid #00f7ff44;
   box-shadow: 0 -4px 10px rgba(0, 247, 255, 0.08);
 }
 
-.footer.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
 
 .footer-content {
   max-width: 1000px;

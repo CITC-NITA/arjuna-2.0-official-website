@@ -3,13 +3,7 @@
   background: linear-gradient(to right, #0f0f0f, #1a1a1a);
   color: white;
   transition: all 0.8s ease;
-  opacity: 0;
-  transform: translateY(50px);
-}
-
-.faq-section.visible {
-  opacity: 1;
-  transform: translateY(0);
+  
 }
 
 .faq-section h2 {

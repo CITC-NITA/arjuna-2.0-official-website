@@ -8,11 +8,13 @@ import Rules from './components/Rules';
 import Prizes from './components/Prizes';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
+import CursorTrail from './components/CursorTrail';
 import './App.css';
 
 function App() {
   return (
     <div className="main-container">
+      <CursorTrail />
       <Navbar />
       <Hero />
       <About />

@@ -1,3 +1,4 @@
+/* ================= BASE STYLES ================= */
 .navbar {
   position: fixed;
   top: 0;
@@ -6,33 +7,33 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 18rem 1rem 3rem;
+  padding: 1rem 3rem;
   z-index: 1000;
   box-shadow: 0 2px 12px rgba(228, 226, 226, 0.5);
   backdrop-filter: blur(8px);
 }
 
-.navbar img {
-  height: auto;
-  max-height: 60px;
-  transition: transform 0.3s ease;
+.logo {
+  height: 5rem;
+  width: 20rem;
   filter: brightness(0) invert(1);
+  transition: transform 0.3s ease;
 }
 
-.navbar img:hover {
+.logo:hover {
   transform: scale(1.05);
 }
 
-.navbar ul {
-  list-style: none;
+.nav-links {
   display: flex;
   gap: 2rem;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.navbar li a {
-  color: #ffffff;
+.nav-links li a {
+  color: white;
   text-decoration: none;
   font-size: 1rem;
   font-weight: 500;
@@ -40,7 +41,7 @@
   transition: color 0.3s ease;
 }
 
-.navbar li a::after {
+.nav-links li a::after {
   content: '';
   position: absolute;
   width: 0%;
@@ -51,29 +52,66 @@
   transition: width 0.3s ease;
 }
 
-.navbar li a:hover {
+.nav-links li a:hover {
   color: #00f7ff;
 }
 
-.navbar li a:hover::after {
+.nav-links li a:hover::after {
   width: 100%;
 }
 
+/* ================= HAMBURGER ================= */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  z-index: 1100;
+}
+
+.bar {
+  width: 2rem;      
+  height: 0.25rem;      
+  background-color: white;
+  border-radius: 2px;
+  transition: 0.3s ease;
+  
+}
+
+/* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
+  
   .navbar {
     flex-direction: column;
     align-items: flex-start;
-    padding: 1rem 2rem;
+    padding: 1rem 1.5rem;
   }
 
-  .navbar ul {
+  .hamburger {
+    display: flex;
+    margin-left: auto;
+    margin-right: 3rem;
+  }
+
+  .nav-links {
+    display: none;
     flex-direction: column;
     width: 100%;
-    gap: 1rem;
     margin-top: 1rem;
+    gap: 1rem;
   }
 
-  .navbar li a {
-    font-size: 1.1rem;
+  .nav-links.active {
+    display: flex;
+  }
+  #nav-links-last {
+    display: none;
+  }
+}
+
+@media (max-width:361px) {
+  .logo {
+    width: 10rem;
+    height: 3rem;
   }
 }

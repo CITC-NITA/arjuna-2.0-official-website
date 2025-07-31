@@ -54,7 +54,7 @@ const Deadlines = () => {
         </div>
 
         <div className="timeline-item">
-          <div className="circle final"></div>
+          <div className="circle"></div>
           <div className="content">
             <h3>GRAND FINALE</h3>
             <p>28TH JULY, 2025</p>

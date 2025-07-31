@@ -1,4 +1,3 @@
-import React, { useEffect, useRef, useState } from 'react';
 import '../styles/rules.css';
 
 
@@ -38,23 +37,10 @@ const rulesData = [
 ];
 
 const Rules = () => {
-  const ref = useRef();
-  const [visible, setVisible] = useState(false);
-
-  useEffect(() => {
-    const obs = new IntersectionObserver(
-      ([entry]) => setVisible(entry.isIntersecting),
-      { threshold: 0.3 }
-    );
-    const currentRef = ref.current;
-    if (currentRef) obs.observe(currentRef);
-    return () => {
-      if (currentRef) obs.unobserve(currentRef);
-    };
-  }, []);
+  
 
   return (
-    <section id="rules" className={`rules-section ${visible ? 'visible' : ''}`} ref={ref} >
+    <section id="rules" className="rules-section">
       <h2>Rules & Guidelines</h2>
       <div className="rules-container">
         {rulesData.map((block, idx) => (

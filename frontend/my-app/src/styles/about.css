@@ -6,6 +6,8 @@
   margin: auto;
 }
 
+
+
 .section h2 {
   font-size: 2.8rem;
   color: #00f7ff;
@@ -32,4 +34,17 @@
   color: #e0e0e0;
   max-width: 800px;
   margin: 0 auto;
+}
+
+
+@media (max-width:768px) {
+  .section p {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width:469px) {
+  .section h2 {
+    margin-top: -1rem;
+  }
 }

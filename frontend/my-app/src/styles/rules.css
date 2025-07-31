@@ -3,13 +3,7 @@
   background: linear-gradient(to right, #0e0e0e, #1a1a1a);
   color: #ffffff;
   transition: all 0.8s ease;
-  opacity: 0;
-  transform: translateY(50px);
-}
-
-.rules-section.visible {
-  opacity: 1;
-  transform: translateY(0);
+  
 }
 
 .rules-section h2 {

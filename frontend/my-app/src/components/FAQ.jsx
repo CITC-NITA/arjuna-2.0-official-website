@@ -1,4 +1,3 @@
-import React, { useEffect, useRef, useState } from 'react';
 import "../styles/faq.css";
 
 const faqList = [
@@ -29,25 +28,10 @@ const faqList = [
 ];
 
 const FAQ = () => {
-  const sectionRef = useRef();
-  const [visible, setVisible] = useState(false);
-
-  useEffect(() => {
-    const obs = new IntersectionObserver(
-      ([entry]) => setVisible(entry.isIntersecting),
-      { threshold: 0.3 }
-    );
-
-    const currentRef = sectionRef.current;
-
-    if (currentRef) obs.observe(currentRef);
-    return () => {
-      if (currentRef) obs.unobserve(currentRef);
-    };
-  }, []);
+  
 
   return (
-    <section id="FAQ" className={`faq-section ${visible ? 'visible' : ''}`} ref={sectionRef}>
+    <section id="FAQ" className="faq-section">
       <h2>Frequently Asked Questions</h2>
       <div className="faq-container">
         {faqList.map((faq, index) => (
