@@ -70,3 +70,10 @@
     font-size: 1rem;
   }
 }
+
+
+@media (max-width:463px) {
+  .faq-section h2 {
+    margin-top: -1rem;
+  }
+}

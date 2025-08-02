@@ -1,5 +1,5 @@
 import '../styles/rules.css';
-
+import bg from "../assets/rules-bg.jpg"; 
 
 const rulesData = [
   {
@@ -40,7 +40,7 @@ const Rules = () => {
   
 
   return (
-    <section id="rules" className="rules-section">
+    <section id="rules" className="rules-section" style={{ backgroundImage: `url(${bg})` }}>
       <h2>Rules & Guidelines</h2>
       <div className="rules-container">
         {rulesData.map((block, idx) => (

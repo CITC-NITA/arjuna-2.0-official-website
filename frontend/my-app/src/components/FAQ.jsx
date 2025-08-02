@@ -1,4 +1,5 @@
 import "../styles/faq.css";
+import bg from "../assets/rules-bg.jpg";
 
 const faqList = [
   {
@@ -31,7 +32,7 @@ const FAQ = () => {
   
 
   return (
-    <section id="FAQ" className="faq-section">
+    <section id="FAQ" className="faq-section" style={{ backgroundImage: `url(${bg})` }}>
       <h2>Frequently Asked Questions</h2>
       <div className="faq-container">
         {faqList.map((faq, index) => (
