@@ -4,7 +4,8 @@
   "description": "Arjuna 2.0 official Website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "author": "Abhishek Sakhare",
   "license": "ISC",
