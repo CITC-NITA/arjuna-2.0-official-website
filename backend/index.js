@@ -1,19 +1,22 @@
-// backend/index.js
 const express = require("express");
 const cors = require("cors");
-const db = require("./database/config"); // connect DB
+const dotenv = require("dotenv");
+const connectDB = require("./database/config"); 
 const Team = require("./models/team");
+
+dotenv.config();
+
+// Connect DB (Atlas)
+connectDB();
 
 const app = express();
 app.use(cors());
-app.use(express.json()); // so we can read JSON from frontend
+app.use(express.json());
 
-// Test route
 app.get("/", (req, res) => {
-  res.send("✅ Backend is working");
+  res.send("Backend is working 🚀");
 });
 
-// API to handle form submission
 app.post("/api/register", async (req, res) => {
   try {
     const newTeam = new Team(req.body);
@@ -25,6 +28,7 @@ app.post("/api/register", async (req, res) => {
   }
 });
 
-app.listen(5000, () => {
-  console.log("🚀 Server running on http://localhost:5000");
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`🚀 Server running on http://localhost:${PORT}`);
 });
