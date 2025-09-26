@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link,useNavigate} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 import heroBg from '../assets/hero-bg.jpg';
 import "../styles/hero.css";
 import brochure from "../assets/brochure-pdf.pdf";
