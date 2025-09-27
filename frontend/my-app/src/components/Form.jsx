@@ -46,6 +46,7 @@ function Form() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+      
       await axios.post(`${process.env.REACT_APP_API_URL}`, formData);
       
       alert("Registration successful!");
