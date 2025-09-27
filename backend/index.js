@@ -12,7 +12,10 @@ connectDB();
 const app = express();
 
 app.use(cors({
-  origin: ["https://arjuna-2-0-official-website.vercel.app"],
+  origin: [
+    "https://arjuna-2-0-official-website.vercel.app",
+    "http://localhost:3000"
+  ],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
