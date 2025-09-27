@@ -46,8 +46,8 @@ function Form() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      
-      await axios.post(`${process.env.REACT_APP_API_URL}`, formData);
+
+      await axios.post("https://arjuna-2-0-official-website.onrender.com/api/register", formData);
       
       alert("Registration successful!");
       setFormData({

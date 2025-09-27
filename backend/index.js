@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const dotenv = require("dotenv");
-const connectDB = require("./database/config"); 
+const connectDB = require("./database/config");
 const Team = require("./models/team");
 
 dotenv.config();
@@ -11,15 +11,17 @@ connectDB();
 
 const app = express();
 
-app.use(cors({
-  origin: [
-    "https://arjuna-2-0-official-website.vercel.app",
-    "http://localhost:3000"
-  ],
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  credentials: true
-}));
-
+app.use(
+  cors({
+    origin: [
+      "https://arjuna-2-0-official-website.vercel.app",
+      "http://localhost:3000",
+    ],
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: true,
+  })
+);
 
 app.use(express.json());
 
