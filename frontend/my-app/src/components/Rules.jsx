@@ -15,7 +15,7 @@ const rulesData = [
     points: [
       'After the team leader has registered the team name via the registration form before the deadline, a WhatsApp group will be created for team leaders.',
       'Another form will be shared in the group where team leaders must submit their ideas against a Problem Statement.',
-      'Idea submission window is from 11/06/2025 to 25/06/2025. No submissions will be accepted after that.',
+      'Idea submission window is from 28/09/2025 to 20/10/2025. No submissions will be accepted after that.',
       'Submission format will be attached within the registration form itself.',
     ],
   },
@@ -23,14 +23,14 @@ const rulesData = [
     title: 'Grand Finalists Announcement',
     points: [
       'Notifications regarding selected teams will be sent via email to the team leader.',
-      'SIX teams per Problem Statement will be selected to compete in the Grand Finale.',
+      'Five teams per Problem Statement will be selected to compete in the Grand Finale.',
     ],
   },
   {
     title: 'Miscellaneous Information',
     points: [
       "No travel reimbursement will be provided; participants must arrange their own travel.",
-      "Accommodation will be provided to non-Agartala participants from 27th to 29th July, 2025.",
+      "Accommodation will be provided to non-Agartala participants from 7th to 9th November, 2025.",
       "Food will be provided on these dates for all participants.",
     ],
   },

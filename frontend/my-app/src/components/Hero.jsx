@@ -20,8 +20,6 @@ function Hero() {
       <p>Presents</p>
       <h1>ARJUNA 2.0</h1>
       
-
-      
       <a className="btn" onClick={gotoform}>Apply Now</a>
       <a href={brochure} className="btn outline" target="_blank" rel="noopener noreferrer">Download Brochure</a>
 

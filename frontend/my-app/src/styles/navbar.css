@@ -115,3 +115,9 @@
     height: 3rem;
   }
 }
+@media (max-width:500px) {
+  .logo {
+    width: 12rem;
+    height: 3rem;
+  }
+}

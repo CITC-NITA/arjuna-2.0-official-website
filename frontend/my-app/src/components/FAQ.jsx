@@ -8,11 +8,11 @@ const faqList = [
   },
   {
     question: "HOW DO I REGISTER?",
-    answer: "Team Leader has to register through the Google Form.",
+    answer: "Team Leader has to register through Unstop or Google Form.",
   },
   {
     question: "WHEN TO REGISTER?",
-    answer: "Team Leader has to register on or before 10th June, 2025 tentatively.",
+    answer: "Team Leader has to register on or before 20th October, 2025 tentatively.",
   },
   {
     question: "WHAT IF I DO NOT REGISTER?",
