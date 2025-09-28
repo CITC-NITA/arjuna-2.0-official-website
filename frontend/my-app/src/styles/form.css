@@ -144,24 +144,6 @@
   color: black;
 }
 
-/* ✅ Make it mobile responsive */
-@media (max-width: 600px) {
-  .dropdown-header {
-    width: 100%;
-    font-size: 14px;
-    padding: 8px;
-  }
-
-  .dropdown-list {
-    max-height: 200px; /* smaller scroll area on mobile */
-    font-size: 14px;
-  }
-
-  .dropdown-item {
-    padding: 8px;
-  }
-}
-
 
 @media (max-width:570px) {
   .dropdown-list {
