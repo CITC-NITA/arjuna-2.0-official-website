@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import HeaderImg from './components/HeaderImg';
 import Hero from './components/Hero';
 import About from './components/About';
 import Problems from './components/Problems';
@@ -12,6 +13,7 @@ import Footer from './components/Footer';
 import CursorTrail from './components/CursorTrail';
 import Form from './components/Form';
 import './App.css';
+
 
 function App() {
   return (
@@ -26,6 +28,7 @@ function App() {
             path="/"
             element={
               <>
+                
                 <Hero />
                 <About />
                 <Deadlines />
