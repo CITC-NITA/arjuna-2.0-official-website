@@ -14,7 +14,7 @@ function Hero() {
   }
 
   return(
-    <header className="hero" style={{ backgroundImage: `url(${heroBg})` }}>
+    <header className="hero" style={{ backgroundImage: `url(${heroBg})`}}>
     <div className="overlay">
       <h1>Civil Innovation & Technology Cell, NIT Agartala</h1>
       <p>Presents</p>

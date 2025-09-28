@@ -30,7 +30,7 @@ const rulesData = [
     title: 'Miscellaneous Information',
     points: [
       "No travel reimbursement will be provided; participants must arrange their own travel.",
-      "Accommodation will be provided to non-Agartala participants from 7th to 9th November, 2025.",
+      "Accommodation will be provided to non-Agartala participants from 6th to 8th November, 2025.",
       "Food will be provided on these dates for all participants.",
     ],
   },

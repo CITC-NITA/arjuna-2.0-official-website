@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../styles/form.css";
 import bg from "../assets/form-bg.jpg";
+import qr from "../assets/qr-code.jpg";
 import axios from "axios";
 import Footer from "./Footer";
 
@@ -222,6 +223,29 @@ function Form() {
           {/* =================================================================== */}
 
           <button type="submit">Submit</button>
+        </form>
+      </section>
+      
+
+
+
+
+
+
+      <section
+        className="registration-section unstop-sec1"
+        style={{ backgroundImage: `url(${bg})` }}
+      >
+        <form onSubmit={handleSubmit} className="form-content unstop-sec2">
+          <h2>Registration through Unstop</h2>
+          <div className="unstop-sec3">
+            <p>Click on the button below to proceed Registration !!!</p>
+            <div>
+             
+              <button><a href="https://unstop.com/p/arjuna-20-northeast-tech-summit-2025-national-institute-of-technology-nit-agartala-1565379" target="_blank">Click me !</a></button>
+            </div>
+          </div>
+          
         </form>
       </section>
       <Footer />

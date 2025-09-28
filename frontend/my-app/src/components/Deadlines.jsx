@@ -57,7 +57,7 @@ const Deadlines = () => {
           <div className="circle"></div>
           <div className="content">
             <h3>GRAND FINALE</h3>
-            <p>8TH NOVEMBER, 2025</p>
+            <p>7TH NOVEMBER, 2025</p>
           </div>
         </div>
 

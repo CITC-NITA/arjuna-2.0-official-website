@@ -1,9 +1,7 @@
 
 .registration-section {
-  
   position: relative;
   display: flex;
-
   align-items: center;
   justify-content: center;
   color: #fff;
@@ -147,6 +145,31 @@
   background-color: #f2f2f2;
 }
 
+.unstop-sec1 {
+  margin-top: 0rem;
+}
+
+.unstop-sec2 {
+  display: flex;
+}
+
+.unstop-sec3 {
+  display: flex;
+}
+
+.unstop-sec3 div {
+  display: flex;
+}
+
+.unstop-sec3 img {
+  height: 10rem;
+  width: 10rem;
+}
+
+.unstop-sec3 a {
+  text-decoration: none;
+  color: black;
+}
 
 @keyframes fadeIn {
   from {
