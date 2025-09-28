@@ -15,7 +15,7 @@ const rulesData = [
     points: [
       'After the team leader has registered the team name via the registration form before the deadline, a WhatsApp group will be created for team leaders.',
       'Another form will be shared in the group where team leaders must submit their ideas against a Problem Statement.',
-      'Idea submission window is from 28/09/2025 to 20/10/2025. No submissions will be accepted after that.',
+      'Idea submission window is from 28/09/2025 to 24/10/2025. No submissions will be accepted after that.',
       'Submission format will be attached within the registration form itself.',
     ],
   },
